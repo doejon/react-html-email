@@ -12,7 +12,6 @@ const __DEV__ = typeof process !== 'undefined' && process.env && process.env.NOD
 
 configStyleValidator({
   warn: __DEV__,
-  strict: false,
 })
 
 export {

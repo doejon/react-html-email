@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import StyleValidator from './StyleValidator'
 
 export const __styleValidator = new StyleValidator()
@@ -9,7 +9,7 @@ export function configStyleValidator(config) {
 
 export default {
   style(props, propName, componentName, ...rest) {
-    const objErr = React.PropTypes.object(props, propName, componentName, ...rest)
+    const objErr = PropTypes.object(props, propName, componentName, ...rest)
     if (objErr) {
       return objErr
     }
